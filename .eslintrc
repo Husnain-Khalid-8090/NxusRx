@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": 2,
+    "react/prop-types": "off"
+  },
+  "extends": [
+    "eslint:recommended", 
+    "plugin:react/recommended"
+  ],
+  "parser":"babel-eslint"
+}

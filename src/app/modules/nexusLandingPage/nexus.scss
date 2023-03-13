@@ -1,0 +1,11 @@
+@import "../../../scss/components/card";
+:root {
+  .landing-sidebar {
+    .MuiDrawer-paper {
+      position: relative;
+    }
+  }
+  .product-view.MuiPaper-root{
+  width: 100%;
+}
+}

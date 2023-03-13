@@ -1,0 +1,13 @@
+@import "../../../../../scss/components/buttons";
+
+:root {
+  .upload-img-item {
+    .MuiImageListItem-img {
+      width: 70px;
+      height: 70px;
+      flex-grow: unset;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+}

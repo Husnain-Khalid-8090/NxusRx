@@ -1,0 +1,15 @@
+@import "../variables";
+
+.MuiDataGrid-root {
+  @include themify($themes) {
+    color: themed("txtColor");
+  }
+  .MuiDataGrid-cell, .css-f3jnds-MuiDataGrid-columnHeaders{
+    @include themify($themes) {
+      border-color: themed("tableBorder");
+    }
+  }
+.MuiDataGrid-columnSeparator--sideRight{
+    display: none;
+  }
+}

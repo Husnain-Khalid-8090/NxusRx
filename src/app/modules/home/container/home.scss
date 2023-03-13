@@ -1,0 +1,14 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins/mixins";
+
+#map {
+    background-position: top right;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+fieldset{
+    @include themify($themes) {
+        border-color: themed("border");
+    }
+}

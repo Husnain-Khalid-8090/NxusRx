@@ -1,0 +1,12 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins/mixins";
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+  @include themify($themes) {
+    background-color: themed("barBg");
+    color: themed("txtColor");
+  }
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.04);
+}

@@ -1,0 +1,49 @@
+@import "../../../../scss/variables";
+
+header {
+  @include themify($themes) {
+    background: themed("barBg");
+  }
+
+  .navMenuItems {
+    @include themify($themes) {
+      color: themed("txtColor");
+    }
+  }
+
+  .MuiTypography-root {
+    @include themify($themes) {
+      color: themed("txtColor")
+    }
+  }
+  .css-i4bv87-MuiSvgIcon-root{
+    @include themify($themes) {
+      fill: themed("txtColor")
+    }
+  }
+}
+
+.theme-light {
+  .theme-change-icon {
+
+    background-image: url('../../../assets/images/bytesize_moon.svg');
+
+  }
+}
+
+.theme-dark {
+  .theme-change-icon {
+
+    background-image: url('../../../assets/images/eva_sun-fill.svg');
+
+  }
+}
+
+.notification-icon {
+  background-image: url('../../../assets/images/codicon_bell.svg');
+
+}
+
+.user-icon {
+  background-image: url('../../../assets/images/carbon_user-avatar-filled-alt.svg');
+}

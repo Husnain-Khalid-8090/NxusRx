@@ -1,0 +1,15 @@
+@import "../variables";
+
+.MuiCard-root {
+  //height: calc(100vh - 140px);
+  padding: 15px;
+  @include themify($themes) {
+    background-color: themed("barBg");
+    color: themed("txtColor");
+  }
+
+  /*.MuiCardContent-root {
+    height: calc(100% - 90px);
+    overflow: auto;
+  }*/
+}

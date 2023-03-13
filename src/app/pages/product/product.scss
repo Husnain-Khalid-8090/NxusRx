@@ -1,0 +1,70 @@
+.image-uploader {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-upload-container {
+  border: 2px dashed #7366ff;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7366ff;
+  font-size: 16px;
+  background-color: rgba(115, 102, 255, 0.18);
+  position: relative;
+}
+
+.image-preview {
+  background: #ffffff;
+  z-index: 1;
+
+  img {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+  }
+}
+
+.cover {
+  &:before {
+    position: absolute;
+    background-color: #7366ff;
+    height: 21px;
+    width: 100%;
+    content: "cover";
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    padding-top: 2px;
+    z-index: 2;
+  }
+}
+
+.txt-divider {
+  width: 100%;
+}
+
+:root {
+  .MuiButton-containedSizeMedium {
+    border-radius: 6px;
+    padding: 4px 19px;
+  }
+}
+
+.MuiButton-containedSizeMedium.containedPrimary {
+  font-size: 14px;
+}
+
+:root {
+  .card-grid.MuiCard-root {
+    height: calc(100vh - 140px);
+
+    .MuiCardContent-root {
+      height: calc(100% - 90px);
+      overflow: auto;
+    }
+  }
+}
